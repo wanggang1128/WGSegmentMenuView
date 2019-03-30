@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		3208E1DD224B874B009AB650 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208E1DC224B874B009AB650 /* AppDelegate.m */; };
 		3208E1E0224B874B009AB650 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208E1DF224B874B009AB650 /* ViewController.m */; };
-		3208E1E3224B874B009AB650 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3208E1E1224B874B009AB650 /* Main.storyboard */; };
 		3208E1E5224B874D009AB650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3208E1E4224B874D009AB650 /* Assets.xcassets */; };
 		3208E1E8224B874D009AB650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3208E1E6224B874D009AB650 /* LaunchScreen.storyboard */; };
 		3208E1EB224B874D009AB650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208E1EA224B874D009AB650 /* main.m */; };
 		3208E1F5224B874D009AB650 /* WGNavMenuViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208E1F4224B874D009AB650 /* WGNavMenuViewTests.m */; };
 		3208E200224B874D009AB650 /* WGNavMenuViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3208E1FF224B874D009AB650 /* WGNavMenuViewUITests.m */; };
+		3268D01B224C91020032375F /* WGSegmentMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268D01A224C91020032375F /* WGSegmentMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		3208E1DC224B874B009AB650 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3208E1DE224B874B009AB650 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3208E1DF224B874B009AB650 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3208E1E2224B874B009AB650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3208E1E4224B874D009AB650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3208E1E7224B874D009AB650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3208E1E9224B874D009AB650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +50,8 @@
 		3208E1FB224B874D009AB650 /* WGNavMenuViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WGNavMenuViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3208E1FF224B874D009AB650 /* WGNavMenuViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGNavMenuViewUITests.m; sourceTree = "<group>"; };
 		3208E201224B874D009AB650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3268D019224C91020032375F /* WGSegmentMenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WGSegmentMenuView.h; sourceTree = "<group>"; };
+		3268D01A224C91020032375F /* WGSegmentMenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WGSegmentMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +102,11 @@
 		3208E1DA224B874B009AB650 /* WGNavMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				3208E20D224B884A009AB650 /* WGTools */,
 				3208E1DB224B874B009AB650 /* AppDelegate.h */,
 				3208E1DC224B874B009AB650 /* AppDelegate.m */,
 				3208E1DE224B874B009AB650 /* ViewController.h */,
 				3208E1DF224B874B009AB650 /* ViewController.m */,
-				3208E1E1224B874B009AB650 /* Main.storyboard */,
 				3208E1E4224B874D009AB650 /* Assets.xcassets */,
 				3208E1E6224B874D009AB650 /* LaunchScreen.storyboard */,
 				3208E1E9224B874D009AB650 /* Info.plist */,
@@ -130,6 +131,15 @@
 				3208E201224B874D009AB650 /* Info.plist */,
 			);
 			path = WGNavMenuViewUITests;
+			sourceTree = "<group>";
+		};
+		3208E20D224B884A009AB650 /* WGTools */ = {
+			isa = PBXGroup;
+			children = (
+				3268D019224C91020032375F /* WGSegmentMenuView.h */,
+				3268D01A224C91020032375F /* WGSegmentMenuView.m */,
+			);
+			path = WGTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +247,6 @@
 			files = (
 				3208E1E8224B874D009AB650 /* LaunchScreen.storyboard in Resources */,
 				3208E1E5224B874D009AB650 /* Assets.xcassets in Resources */,
-				3208E1E3224B874B009AB650 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +274,7 @@
 				3208E1E0224B874B009AB650 /* ViewController.m in Sources */,
 				3208E1EB224B874D009AB650 /* main.m in Sources */,
 				3208E1DD224B874B009AB650 /* AppDelegate.m in Sources */,
+				3268D01B224C91020032375F /* WGSegmentMenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +310,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3208E1E1224B874B009AB650 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3208E1E2224B874B009AB650 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3208E1E6224B874D009AB650 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
